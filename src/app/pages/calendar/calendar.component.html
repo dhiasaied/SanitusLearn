@@ -1,0 +1,95 @@
+<div class="calendar-page">
+    <div class="calendar-container">
+        <h1 class="calendar-title">Calendar</h1>
+        
+        <!-- Calendar Controls -->
+        <div class="calendar-controls">
+            <div class="controls-left">
+                <select class="form-select month-select">
+                    <option value="february">February</option>
+                    <option value="january">January</option>
+                    <option value="march">March</option>
+                </select>
+                <select class="form-select course-select">
+                    <option value="all">All courses</option>
+                </select>
+            </div>
+            <button class="btn btn-primary new-event-btn">
+                <i class="bi bi-plus-circle"></i> New event
+            </button>
+        </div>
+
+        <!-- Month Navigation -->
+        <div class="month-navigation">
+            <button class="month-nav-btn prev-month">
+                <i class="bi bi-chevron-left"></i> <span class="month-name">January</span>
+            </button>
+            <div class="current-month">
+                <h2>February 2026</h2>
+            </div>
+            <button class="month-nav-btn next-month">
+                <span class="month-name">March</span> <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Calendar Grid -->
+        <div class="calendar-grid">
+            <!-- Days of Week Header -->
+            <div class="calendar-day-header">Mon</div>
+            <div class="calendar-day-header">Tue</div>
+            <div class="calendar-day-header">Wed</div>
+            <div class="calendar-day-header">Thu</div>
+            <div class="calendar-day-header">Fri</div>
+            <div class="calendar-day-header">Sat</div>
+            <div class="calendar-day-header">Sun</div>
+
+            <!-- Calendar Days -->
+            <!-- Empty cells for days before Feb 1 (Feb 1, 2026 is a Sunday) -->
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day empty"></div>
+            <div class="calendar-day">1</div>
+            <div class="calendar-day">2</div>
+            <div class="calendar-day">3</div>
+            <div class="calendar-day">4</div>
+            <div class="calendar-day">5</div>
+            <div class="calendar-day">6</div>
+            <div class="calendar-day">7</div>
+            <div class="calendar-day">8</div>
+            <div class="calendar-day">9</div>
+            <div class="calendar-day">10</div>
+            <div class="calendar-day">11</div>
+            <div class="calendar-day">12</div>
+            <div class="calendar-day">13</div>
+            <div class="calendar-day">14</div>
+            <div class="calendar-day">15</div>
+            <div class="calendar-day">16</div>
+            <div class="calendar-day">17</div>
+            <div class="calendar-day active">18</div>
+            <div class="calendar-day">19</div>
+            <div class="calendar-day">20</div>
+            <div class="calendar-day">21</div>
+            <div class="calendar-day">22</div>
+            <div class="calendar-day">23</div>
+            <div class="calendar-day">24</div>
+            <div class="calendar-day">25</div>
+            <div class="calendar-day">26</div>
+            <div class="calendar-day">27</div>
+            <div class="calendar-day">28</div>
+        </div>
+
+        <!-- Import/Export Link -->
+        <div class="calendar-footer">
+            <a href="#" class="import-export-link">
+                <i class="bi bi-download"></i> Import or export calendars
+            </a>
+        </div>
+    </div>
+</div>
+
+<button class="side-nav-btn" title="Navigation">
+    <i class="bi bi-chevron-left"></i>
+</button>

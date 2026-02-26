@@ -1,0 +1,68 @@
+<div class="files-page">
+    <!-- User Header -->
+    <div class="files-user-header">
+        <div class="files-avatar-large">DH</div>
+        <div class="files-user-info">
+            <div class="files-user-name">Dhia Eddine Saied</div>
+            <a routerLink="/chat" class="message-btn">
+                <i class="bi bi-chat-dots"></i> Message
+            </a>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <h1 class="files-page-title">Private Files</h1>
+
+    <!-- Files Section -->
+    <div class="files-section">
+        <h2 class="files-section-title">Files</h2>
+
+        <!-- File Management Box -->
+        <div class="files-box">
+            <!-- File Limits Info -->
+            <div class="files-info-bar">
+                <div class="files-limit-text">
+                    Maximum size for new files is: <strong>2 MB</strong>, for the global limit is: <strong>100 MB</strong>
+                </div>
+                <div class="files-view-icons">
+                    <button class="view-icon-btn active" title="Grid view">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                    </button>
+                    <button class="view-icon-btn" title="List view">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <button class="view-icon-btn" title="Detail view">
+                        <i class="bi bi-list-ul"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Files Container -->
+            <div class="files-container">
+                <!-- Folder Icon -->
+                <div class="files-folder">
+                    <i class="bi bi-folder-fill"></i>
+                    <span>Files</span>
+                </div>
+
+                <!-- Drag and Drop Area -->
+                <div class="files-dropzone" id="filesDropzone">
+                    <div class="dropzone-content">
+                        <i class="bi bi-arrow-down-circle"></i>
+                        <p>You can drag and drop files here to add them</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="files-actions">
+                <button class="btn btn-primary save-btn">
+                    <i class="bi bi-check-circle"></i> Save changes
+                </button>
+                <button class="btn btn-secondary cancel-btn">
+                    <i class="bi bi-x-circle"></i> Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

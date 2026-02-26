@@ -1,0 +1,23 @@
+<!-- Top Navigation Bar -->
+<nav class="top-nav">
+  <div class="nav-left">
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="Logo" style="max-height: 40px; width: auto;">
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Page</a></li>
+      <li><a routerLink="/profile" routerLinkActive="active">Personal Area</a></li>
+      <li><a routerLink="/courses" routerLinkActive="active">My Courses</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/faq" routerLinkActive="active">FAQ</a></li>
+    </ul>
+  </div>
+  <div class="nav-right">
+    <button class="icon-btn" title="Notifications" routerLink="/notifications"><i class="bi bi-bell"></i></button>
+    <button class="icon-btn" title="Messages" routerLink="/chat"><i class="bi bi-chat-dots"></i></button>
+    <div class="user-profile" (click)="toggleDropdown()">
+      <div class="user-avatar">DH</div>
+      <span class="dropdown-arrow"><i class="bi bi-chevron-down"></i></span>
+    </div>
+  </div>
+</nav>

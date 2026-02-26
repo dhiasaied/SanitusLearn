@@ -1,0 +1,62 @@
+<div class="auth-layout">
+    <div class="auth-card">
+        <div class="auth-brand">
+            <img src="assets/logo.jpg" alt="Logo">
+        </div>
+
+        <h1 class="auth-title">Créer un compte</h1>
+        <p class="auth-subtitle">Remplissez les informations ci-dessous.</p>
+
+        <form (ngSubmit)="onSubmit()" #registerForm="ngForm" novalidate>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <div class="auth-label">Prénom</div>
+                    <input class="auth-input" type="text" name="firstName" placeholder="Prénom" autocomplete="given-name" required [(ngModel)]="formData.firstName">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="auth-label">Nom</div>
+                    <input class="auth-input" type="text" name="lastName" placeholder="Nom" autocomplete="family-name" required [(ngModel)]="formData.lastName">
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <div class="auth-label">Email</div>
+                <input class="auth-input" type="email" name="email" placeholder="ex: nom@domaine.com" autocomplete="email" required [(ngModel)]="formData.email">
+            </div>
+
+            <div class="row g-3 mt-1">
+                <div class="col-12 col-md-6">
+                    <div class="auth-label">Mot de passe</div>
+                    <input class="auth-input" type="password" name="password" placeholder="Mot de passe" autocomplete="new-password" required [(ngModel)]="formData.password">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="auth-label">Confirmer</div>
+                    <input class="auth-input" type="password" name="confirmPassword" placeholder="Confirmer" autocomplete="new-password" required [(ngModel)]="formData.confirmPassword">
+                </div>
+            </div>
+
+            <div class="auth-row" style="margin-top: 14px;">
+                <label class="d-flex align-items-center gap-2" style="font-size: 13px; color:#666;">
+                    <input type="checkbox" name="terms" class="form-check-input m-0" required [(ngModel)]="formData.terms">
+                    J'accepte les conditions d'utilisation
+                </label>
+            </div>
+
+            <button class="auth-btn" type="submit">
+                <i class="bi bi-person-plus me-1"></i>
+                Créer mon compte
+            </button>
+        </form>
+
+        <div class="auth-divider"></div>
+
+        <div class="auth-foot">
+            Déjà inscrit ?
+            <a class="auth-link" routerLink="/connexion">Se connecter</a>
+        </div>
+
+        <div class="auth-foot" style="margin-top: 8px;">
+            <a class="auth-link" routerLink="/"><i class="bi bi-arrow-left me-1"></i>Retour à l'accueil</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<!-- Content Wrapper -->
+<div class="content-wrapper">
+  <main class="main-content">
+    <h1 class="page-title">Contact</h1>
+    <p class="text-muted mb-4">If you have any questions or need support about the Training Campus, you can contact us using the form below.</p>
+
+    <section class="card p-4 shadow-sm">
+      <form class="row g-3" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="col-md-6">
+          <label for="contactName" class="form-label">Full name</label>
+          <input type="text" class="form-control" id="contactName" placeholder="Your name" [(ngModel)]="formData.name" name="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="contactEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="contactEmail" placeholder="you@example.com" [(ngModel)]="formData.email" name="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="contactSubject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="contactSubject" placeholder="Subject of your message" [(ngModel)]="formData.subject" name="subject" required>
+        </div>
+        <div class="col-md-6">
+          <label for="contactType" class="form-label">Type of request</label>
+          <select id="contactType" class="form-select" [(ngModel)]="formData.type" name="type" required>
+            <option value="">Choose...</option>
+            <option value="technical">Technical issue</option>
+            <option value="course">Course information</option>
+            <option value="access">Access / login problem</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="contactMessage" class="form-label">Message</label>
+          <textarea class="form-control" id="contactMessage" rows="5" placeholder="Describe your question or issue" [(ngModel)]="formData.message" name="message" required></textarea>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <button type="submit" class="all-courses-btn">
+            <i class="bi bi-send"></i>
+            <span>Send message</span>
+          </button>
+        </div>
+      </form>
+
+      <hr class="my-4">
+
+      <div class="row g-4 small text-muted">
+        <div class="col-md-4">
+          <h2 class="h6"><i class="bi bi-envelope"></i> Email support</h2>
+          <p class="mb-0">campus-support@example.com</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h6"><i class="bi bi-clock"></i> Support hours</h2>
+          <p class="mb-0">Monday to Friday, 9:00 - 18:00</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h6"><i class="bi bi-info-circle"></i> Response time</h2>
+          <p class="mb-0">We try to answer within 24-48 working hours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,79 @@
+<div class="chat-page">
+    <div class="chat-container">
+        <!-- Chat Main Area -->
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-header-avatar">
+                        <div class="chat-header-avatar-inner">JS</div>
+                        <span class="online-indicator"></span>
+                    </div>
+                    <div class="chat-header-details">
+                        <h3 class="chat-header-name">John Smith</h3>
+                        <span class="chat-header-status">Online</span>
+                    </div>
+                </div>
+                <div class="chat-header-actions">
+                    <button class="chat-action-btn" title="Video Call">
+                        <i class="bi bi-camera-video"></i>
+                    </button>
+                    <button class="chat-action-btn" title="Voice Call">
+                        <i class="bi bi-telephone"></i>
+                    </button>
+                    <button class="chat-action-btn" title="More Options">
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message-date-divider">
+                    <span>Today</span>
+                </div>
+                <div class="message-item received">
+                    <div class="message-avatar">JS</div>
+                    <div class="message-content">
+                        <div class="message-text">Hey, are you available for the meeting?</div>
+                        <div class="message-time">2:25 PM</div>
+                    </div>
+                </div>
+                <div class="message-item sent">
+                    <div class="message-content">
+                        <div class="message-text">Yes, I'm free. What time?</div>
+                        <div class="message-time">2:26 PM</div>
+                    </div>
+                </div>
+                <div class="message-item received">
+                    <div class="message-avatar">JS</div>
+                    <div class="message-content">
+                        <div class="message-text">How about 3 PM?</div>
+                        <div class="message-time">2:27 PM</div>
+                    </div>
+                </div>
+                <div class="message-item sent">
+                    <div class="message-content">
+                        <div class="message-text">Perfect! See you then.</div>
+                        <div class="message-time">2:28 PM</div>
+                    </div>
+                </div>
+                <div class="message-item received">
+                    <div class="message-avatar">JS</div>
+                    <div class="message-content">
+                        <div class="message-text">Great! Don't forget to bring the documents.</div>
+                        <div class="message-time">2:30 PM</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <button class="chat-attach-btn" title="Attach File">
+                    <i class="bi bi-paperclip"></i>
+                </button>
+                <input type="text" class="chat-input" placeholder="Type a message..." id="chatInput">
+                <button class="chat-send-btn" title="Send Message" id="sendBtn">
+                    <i class="bi bi-send"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

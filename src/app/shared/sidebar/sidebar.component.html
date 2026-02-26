@@ -1,0 +1,121 @@
+<!-- Sidebar -->
+<aside class="sidebar">
+  <div class="sidebar-section">
+    <div class="sidebar-header collapsible collapsed" (click)="toggleSection($event)">
+      <i class="bi bi-megaphone"></i>
+      <span>Notices and Forums</span>
+    </div>
+    <div class="sidebar-subsection-content collapsed">
+      <div class="sidebar-item"><a routerLink="/forums"><i class="bi bi-bullhorn"></i> NOTICES</a></div>
+      <div class="sidebar-item"><a routerLink="/introduction-forum"><i class="bi bi-chat-left-text"></i> INTRODUCTION FORUM</a></div>
+      <div class="sidebar-item"><a routerLink="/questions-general-doubts"><i class="bi bi-question-circle"></i> QUESTIONS AND GENERAL DOUBTS</a></div>
+      <div class="sidebar-item"><a routerLink="/cafeteria"><i class="bi bi-cup-hot"></i> CAFETERIA</a></div>
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-header collapsible collapsed" (click)="toggleSection($event)">
+      <i class="bi bi-camera-video"></i>
+      <span>MULTIMEDIA RESOURCES</span>
+    </div>
+    <div class="sidebar-subsection-content collapsed"></div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-item"><a routerLink="/module1-index"><i class="bi bi-list-ol"></i> MODULE 1 INDEX</a></div>
+    <div class="sidebar-item"><a routerLink="/module2-index"><i class="bi bi-list-ol"></i> MODULE 2 INDEX</a></div>
+    <div class="sidebar-item"><a routerLink="/module3-index"><i class="bi bi-list-ol"></i> MODULE 3 INDEX</a></div>
+    <div class="sidebar-item"><a routerLink="/module4-index"><i class="bi bi-list-ol"></i> MODULE 4 INDEX</a></div>
+    <div class="sidebar-item"><a routerLink="/module5-index"><i class="bi bi-list-ol"></i> MODULE 5 INDEX</a></div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-subsection-header collapsed" (click)="toggleSection($event)">
+      <i class="bi bi-book-half"></i>
+      <span>M1. Support in the Organization of Interventions in Institutional Care</span>
+    </div>
+    <div class="sidebar-subsection-content collapsed">
+      <div class="sidebar-subsection">
+        <div class="sidebar-subsection-header collapsed" (click)="toggleSection($event)">
+          <i class="bi bi-file-earmark-text"></i>
+          <span>Topic 1</span>
+        </div>
+        <div class="sidebar-subsection-content collapsed">
+          <div class="sidebar-subitem"><a routerLink="/mf1"><i class="bi bi-file-pdf"></i> MF1.TOPIC 1</a></div>
+          <div class="sidebar-subitem"><a routerLink="/videos-1"><i class="bi bi-camera-video"></i> Forum. Videos M1 Topic 1. Watch them and leave a comment</a></div>
+          <div class="sidebar-subitem"><i class="bi bi-question-circle"></i> DOUBTS about Module 1. Topic 1</div>
+          <div class="sidebar-subitem"><i class="bi bi-dice-6"></i> M1T1 Hangman Game 🎳🎲</div>
+          <div class="sidebar-subitem"><a routerLink="/m1-cat1-assimilation-questionnaire-topic-1"><i class="bi bi-file-check"></i> Module 1. CAT1. Assimilation Questionnaire Topic 1</a></div>
+          <div class="sidebar-subitem"><a routerLink="/m1c1-partial-evaluation-questionnaire-topic-1"><i class="bi bi-clipboard-check"></i> M1C1. Partial Evaluation Questionnaire T1</a></div>
+        </div>
+      </div>
+      <div class="sidebar-subsection">
+        <div class="sidebar-subsection-header collapsed" (click)="toggleSection($event)">
+          <i class="bi bi-file-earmark-text"></i>
+          <span>Topic 2</span>
+        </div>
+        <div class="sidebar-subsection-content collapsed">
+          <div class="sidebar-subitem"><a routerLink="/mf1-tema2-parte1"><i class="bi bi-file-pdf"></i> MF1.TOPIC 2 Part 1</a></div>
+          <div class="sidebar-subitem"><a routerLink="/mf1-tema2-parte2"><i class="bi bi-file-pdf"></i> MF1.TOPIC 2 Part 2</a></div>
+          <div class="sidebar-subitem"><a routerLink="/videos"><i class="bi bi-camera-video"></i> Forum. Videos M1 Topic 2. Watch them and leave a comment</a></div>
+          <div class="sidebar-subitem"><i class="bi bi-question-circle"></i> DOUBTS about Module 1. Topic 2</div>
+          <div class="sidebar-subitem"><i class="bi bi-dice-6"></i> M1T2 Hangman Game 🎳🎲</div>
+          <div class="sidebar-subitem"><a routerLink="/m1-cat1-assimilation-questionnaire-topic-2"><i class="bi bi-file-check"></i> Module 1. CAT2. Assimilation Questionnaire Topic 2</a></div>
+          <div class="sidebar-subitem"><a routerLink="/m1c1-partial-evaluation-questionnaire-topic-2"><i class="bi bi-clipboard-check"></i> M1C2. Partial Evaluation Questionnaire T2 ABVD II</a></div>
+        </div>
+      </div>
+      <div class="sidebar-subsection">
+        <div class="sidebar-subsection-header collapsed" (click)="toggleSection($event)">
+          <i class="bi bi-file-earmark-text"></i>
+          <span>Topic 3</span>
+        </div>
+        <div class="sidebar-subsection-content collapsed">
+          <div class="sidebar-subitem"><i class="bi bi-file-pdf"></i> MF1.TOPIC 3</div>
+          <div class="sidebar-subitem"><a routerLink="/videos-3"><i class="bi bi-camera-video"></i> Forum. Videos Topic 3. Watch them and leave a comment</a></div>
+          <div class="sidebar-subitem"><i class="bi bi-question-circle"></i> DOUBTS about Module 1. Topic 3</div>
+          <div class="sidebar-subitem"><i class="bi bi-dice-6"></i> M1T3 Hangman Game 🎳🎲</div>
+          <div class="sidebar-subitem"><a routerLink="/m1-cat1-assimilation-questionnaire-topic-3"><i class="bi bi-file-check"></i> Module 1. CAT1. Assimilation Questionnaire Topic 3</a></div>
+          <div class="sidebar-subitem"><a routerLink="/m1c1-partial-evaluation-questionnaire-topic-3"><i class="bi bi-clipboard-check"></i> M1C1. Partial Evaluation Questionnaire T3</a></div>
+        </div>
+      </div>
+      <div class="sidebar-subsection">
+        <div class="sidebar-subsection-header collapsed" (click)="toggleSection($event)">
+          <i class="bi bi-file-earmark-text"></i>
+          <span>Topic 4</span>
+        </div>
+        <div class="sidebar-subsection-content collapsed">
+          <div class="sidebar-subitem"><i class="bi bi-file-pdf"></i> MF1.TOPIC 4</div>
+          <div class="sidebar-subitem"><a routerLink="/videos-4"><i class="bi bi-camera-video"></i> Forum. Videos M1 Topic 4. Watch it and leave a comment</a></div>
+          <div class="sidebar-subitem"><i class="bi bi-question-circle"></i> DOUBTS about Module 1. Topic 4</div>
+          <div class="sidebar-subitem"><i class="bi bi-dice-6"></i> M1T4 Hangman Game 🎳🎲</div>
+          <div class="sidebar-subitem"><a routerLink="/m1-cat1-assimilation-questionnaire-topic-4"><i class="bi bi-file-check"></i> Module 1. CAT1. Assimilation Questionnaire Topic 4</a></div>
+          <div class="sidebar-subitem"><a routerLink="/m1c1-partial-evaluation-questionnaire-topic-4"><i class="bi bi-clipboard-check"></i> M1C1. Partial Evaluation Questionnaire T4</a></div>
+        </div>
+      </div>
+      <div class="sidebar-item"><i class="bi bi-folder-plus"></i> COMPLEMENTARY MATERIAL. PRACTICAL CASE</div>
+      <div class="sidebar-item"><i class="bi bi-clipboard-data"></i> Module 1 Evaluation</div>
+      <div class="sidebar-item"><i class="bi bi-question-circle"></i> DOUBTS about Evaluation M1</div>
+      <div class="sidebar-item"><i class="bi bi-file-earmark-check"></i> M1CEF. Final Evaluation Questionnaire</div>
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-item"><i class="bi bi-book"></i> M2. Intervention in Hygienic and Nutritional Care in Institutions</div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-item"><i class="bi bi-book"></i> M3. Intervention in Social and Healthcare Attention in Institutions</div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-item"><i class="bi bi-book"></i> M4. Psychosocial Support, Relational and Communicative Care in Institutions</div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-item"><i class="bi bi-book"></i> M5. First Aid</div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-item"><i class="bi bi-file-earmark-medical"></i> FINAL EXAM</div>
+  </div>
+</aside>

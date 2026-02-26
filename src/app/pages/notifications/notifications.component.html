@@ -1,0 +1,141 @@
+<div class="notifications-page">
+    <div class="notifications-container">
+        <div class="notifications-header">
+            <h1 class="notifications-page-title">Notifications</h1>
+            <div class="notifications-actions">
+                <button class="mark-all-read-btn" id="markAllReadBtn">
+                    <i class="bi bi-check-all"></i> Mark all as read
+                </button>
+                <button class="notifications-filter-btn" id="filterBtn">
+                    <i class="bi bi-funnel"></i> Filter
+                </button>
+            </div>
+        </div>
+
+        <div class="notifications-list" id="notificationsList">
+            <div class="notification-item unread" data-notification-id="1">
+                <div class="notification-icon course">
+                    <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <h3 class="notification-title">New Course Assignment</h3>
+                        <span class="notification-time">2 hours ago</span>
+                    </div>
+                    <p class="notification-message">You have been assigned to a new course: "Advanced Web Development"</p>
+                    <div class="notification-actions">
+                        <button class="notification-action-btn">View Course</button>
+                        <button class="notification-action-btn secondary">Dismiss</button>
+                    </div>
+                </div>
+                <button class="notification-close" title="Remove notification">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <div class="notification-item unread" data-notification-id="2">
+                <div class="notification-icon message">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <h3 class="notification-title">New Message</h3>
+                        <span class="notification-time">5 hours ago</span>
+                    </div>
+                    <p class="notification-message">John Smith sent you a message: "Can we schedule a meeting?"</p>
+                    <div class="notification-actions">
+                        <button class="notification-action-btn">Reply</button>
+                        <button class="notification-action-btn secondary">Dismiss</button>
+                    </div>
+                </div>
+                <button class="notification-close" title="Remove notification">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <div class="notification-item" data-notification-id="3">
+                <div class="notification-icon grade">
+                    <i class="bi bi-star"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <h3 class="notification-title">Grade Posted</h3>
+                        <span class="notification-time">Yesterday</span>
+                    </div>
+                    <p class="notification-message">Your grade for "Module 1 Assessment" has been posted. Score: 95/100</p>
+                    <div class="notification-actions">
+                        <button class="notification-action-btn">View Grade</button>
+                        <button class="notification-action-btn secondary">Dismiss</button>
+                    </div>
+                </div>
+                <button class="notification-close" title="Remove notification">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <div class="notification-item" data-notification-id="4">
+                <div class="notification-icon deadline">
+                    <i class="bi bi-calendar-x"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <h3 class="notification-title">Upcoming Deadline</h3>
+                        <span class="notification-time">2 days ago</span>
+                    </div>
+                    <p class="notification-message">Assignment "Final Project" is due in 3 days. Don't forget to submit!</p>
+                    <div class="notification-actions">
+                        <button class="notification-action-btn">View Assignment</button>
+                        <button class="notification-action-btn secondary">Dismiss</button>
+                    </div>
+                </div>
+                <button class="notification-close" title="Remove notification">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <div class="notification-item" data-notification-id="5">
+                <div class="notification-icon forum">
+                    <i class="bi bi-chat-left-text"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <h3 class="notification-title">Forum Reply</h3>
+                        <span class="notification-time">3 days ago</span>
+                    </div>
+                    <p class="notification-message">Maria Silva replied to your post in "Introduction Forum"</p>
+                    <div class="notification-actions">
+                        <button class="notification-action-btn">View Reply</button>
+                        <button class="notification-action-btn secondary">Dismiss</button>
+                    </div>
+                </div>
+                <button class="notification-close" title="Remove notification">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+
+            <div class="notification-item" data-notification-id="6">
+                <div class="notification-icon system">
+                    <i class="bi bi-info-circle"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-header">
+                        <h3 class="notification-title">System Update</h3>
+                        <span class="notification-time">1 week ago</span>
+                    </div>
+                    <p class="notification-message">The platform will undergo maintenance on Friday, 10:00 PM - 12:00 AM</p>
+                    <div class="notification-actions">
+                        <button class="notification-action-btn secondary">Dismiss</button>
+                    </div>
+                </div>
+                <button class="notification-close" title="Remove notification">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="notifications-empty" id="emptyState" style="display: none;">
+            <i class="bi bi-bell-slash"></i>
+            <p>No notifications</p>
+        </div>
+    </div>
+</div>
