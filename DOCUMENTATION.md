@@ -1,4 +1,4 @@
-# Documentation du Projet SanitusLearn
+# SanitusLearn
 
 ## Introduction
 
